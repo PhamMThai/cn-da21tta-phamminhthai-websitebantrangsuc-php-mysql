@@ -1,0 +1,152 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Tổng thể */
+body {
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    border: none;
+}
+
+/* Header */
+h3.title_admin {
+    text-align: center;
+    font-size: 42px;
+    color: #00796B;
+    padding: 20px 0;
+    background-color: #004D40;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Navigation Menu */
+ul.Amin_list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #00796B;
+    padding: 10px;
+}
+
+ul.Amin_list li {
+    margin: 5px;
+}
+
+ul.Amin_list li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #004D40;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+ul.Amin_list li a:hover {
+    background-color: #26A69A;
+    transform: scale(1.05);
+}
+
+/* Main Content */
+.maincontent {
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 500px;
+}
+
+.maincontent h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #00796B;
+}
+
+#chart {
+    margin-top: 20px;
+    height: 400px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #004D40;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* Hiệu ứng cho bảng */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #00796B;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #e0f2f1;
+    transition: 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    ul.Amin_list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul.Amin_list li {
+        margin: 5px 0;
+    }
+
+    h3.title_admin {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .maincontent {
+        padding: 10px;
+    }
+
+    ul.Amin_list li a {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
