@@ -1,0 +1,246 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Body và Wrapper */
+body {
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* Header */
+.title_admin {
+    background: linear-gradient(to right, #004D40, #00796B);
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #004D40;
+    width: 250px;
+    min-height: 100vh;
+    color: #fff;
+    padding: 20px 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #FFEB3B;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+
+
+/* Main Content */
+.main {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+}
+
+table th {
+    background-color: #00796B;
+    color: white;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #E0F7FA;
+    transition: 0.3s ease;
+}
+
+/* Links in Table */
+table a {
+    color: #00796B;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+table a:hover {
+    color: #FF5252;
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background: #004D40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    border-top-left-radius: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Sidebar */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .main {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+/* Sidebar */
+.sidebar {
+    background: linear-gradient(135deg, #004D40, #00332C);
+    width: 250px;
+    min-height: 100vh;
+    color: #fff;
+    padding: 20px 15px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.sidebar h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #FFEB3B;
+    text-transform: uppercase;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    margin: 10px 0;
+}
+
+.sidebar-menu li a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-menu li a:hover {
+    background: linear-gradient(to right, #26A69A, #4DB6AC);
+    color: #FFEB3B;
+    transform: translateX(8px);
+}
+
+/* Icon Styling */
+.sidebar-menu li a i {
+    margin-right: 10px;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.sidebar-menu li a:hover i {
+    transform: rotate(360deg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .sidebar h3 {
+        font-size: 16px;
+    }
+
+    .sidebar-menu li a {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+.sidebar-menu li a.active {
+    background: linear-gradient(to right, #26A69A, #004D40); /* Gradient màu xanh */
+    color: #FFEB3B; /* Màu chữ vàng nhạt */
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transform: translateX(8px);
+}
+
+.sidebar-menu li a.active i {
+    transform: rotate(360deg);
+    transition: transform 0.3s ease;
+}
